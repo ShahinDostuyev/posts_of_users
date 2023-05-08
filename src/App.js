@@ -15,19 +15,19 @@ function App() {
       .get("https://jsonplaceholder.typicode.com/users")
       .then((res) => {
         setusers(res.data);
-        console.log("user got");
+        console.log("User data is fetched");
       })
       .catch((err) => {
-        console.log("Error occured when fetching data. " + err);
+        console.log("Error occured when fetching data. " + err.toString());
       });
     axios
       .get("https://jsonplaceholder.typicode.com/posts")
       .then((res) => {
         setposts(res.data);
-        console.log("post got");
+        console.log("Post data is fetched");
       })
       .catch((err) => {
-        console.log("Error occured when fetching data. " + err);
+        console.log("Error occured when fetching data. " + err.toString());
       });
   }, []);
 

@@ -11,7 +11,7 @@ function UserSelection({ users, handleChange }) {
         onChange={(e) => handleChange(e.target.value)}
       >
         <option value="0">All users</option>
-        {users.map((item) => {
+        {users && users.map((item) => {
           return <option value={item.id} key={item.id}>{item.name}</option>;
         })}
       </Input>

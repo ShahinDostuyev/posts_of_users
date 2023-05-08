@@ -2,7 +2,6 @@ import React from "react";
 import { Table } from "reactstrap";
 
 function PostDisplay({ posts, selectedUser }) {
-  console.log(selectedUser);
   let filteredPosts;
   if (selectedUser === "0") {
     filteredPosts = posts;
@@ -12,7 +11,6 @@ function PostDisplay({ posts, selectedUser }) {
     );
   }
 
-  console.log(filteredPosts);
   return (
     <Table>
       <thead>
