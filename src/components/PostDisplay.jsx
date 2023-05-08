@@ -21,7 +21,7 @@ function PostDisplay({ posts, selectedUser }) {
         </tr>
       </thead>
       <tbody>
-        {filteredPosts.map((post) => {
+        {filteredPosts && filteredPosts.map((post) => {
           return (
             <tr key={post.id}>
               <td>{post.id}</td>
